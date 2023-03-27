@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarBurguer WebSite Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="img/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>It's not just burguer<br>It's <span>HamburguerMania</span></h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <a href="#">Learn More</a>
+             </div>
+        <div class="ImgBox">
+            <img width="500px" src="IMG/burguer 1.png" class="Hambuguer">
+        </div>
+    </div> 
+    <ul class="thumb">
+        <li><img width="100px" src="img/burguer 1.png" onclick="imgSlider('img/burguer 1.png'); changeCircleColor('#017143')"></li>
+        <li><img width="100px" src="img/burguer 2.png" onclick="imgSlider('img/burguer 2.png'); changeCircleColor('#F53F2C')"></li>
+        <li><img width="100px" src="img/burguer 3.png" onclick="imgSlider('img/burguer 3.png'); changeCircleColor('#2F6AE0')"></li>
+    </ul>
+    <ul class="sci">
+        <li><a href="#"><img width="50px" src="IMG/face.png" alt=""></a></li>
+        <li><a href="#"><img width="50px" src="IMG/insta.png" alt=""></a></li>
+    </ul>
+ </section>
+
+ <script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.Hambuguer').src = anything;
+    }
+    function changeCircleColor(color){
+        const circle = document.querySelector('.circle');
+        circle.style.background = color
+    }
+ </script>
+    
+
+</body>
+</html>
